@@ -1,0 +1,190 @@
+nav{
+    background-color: rgb(255, 229, 229);
+    padding: 2rem 2rem 2rem 2rem;
+    border: 10px;
+    border-radius: 5px;
+}
+a{
+    display: inline-block;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-decoration: none;
+    color: rgb(137, 9, 9);
+    font-size: large;
+    transition: transform 0.3s ease;
+}
+a:hover
+{
+    transform: scale(1.5);
+    /* background-color: rgb(251, 252, 251); */
+    text-decoration-color: #a2e18e;
+}
+.card{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0,0.1);
+    padding: 65px;
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+    display: inline-block;
+    transition: transform 0.2s ease
+  }
+.card-image
+{
+    width: 200px;
+    height: 190px;
+    border-radius: 40px;
+    box-sizing: content-box;
+
+}
+.card-tittle
+{
+    font-size: xx-large;
+}
+.learn-more-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+    background-color: #0056b3;
+}
+
+.mainhead
+{
+    text-align: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 10rem;
+    gap: 15px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-button {
+    padding: 10px 10px;
+    padding-right: 10px;
+    background-color: #28b560;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* transition : transform 0.2s ease; */
+  }
+  
+  .search-button:hover {
+    background-color: #a2e18e;
+  }
+  .wishlist-button {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds space between icon and text */
+    padding: 10px 10px;
+    background-color: #378650;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wishlist-button:hover {
+    background-color: #8bd515;
+}
+.footer-section1
+{
+    background-color: rgb(137, 235, 235);
+    border: 10px;
+    border-radius: 10px;
+    font-size:xx-large;
+    text-align: center;
+    padding: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.footer-section2
+{
+    background-color: rgb(196, 222, 149);
+    border: 10px;
+    border-radius: 10px;
+    font-size:xx-large;
+    text-align: center;
+    padding: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.footer-section3
+{
+    background-color: rgb(152, 145, 202);
+    border: 10px;
+    border-radius: 10px;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.image-carousel {
+    width: 1400px;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-image {
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+.card:hover{
+    transform : scale(1.04);
+    border-color: black;
+}
+.contact-nav {
+    padding: 10;
+    display: flex;
+    justify-content: center;
+}
+.social-icon {
+    text-decoration: none;
+    color: #333;
+    font-size: xx-large;
+}
+.contact-nav .social-icon:hover {
+    color: #007bff;
+}
+.text
+{
+    text-align: center;
+    font-size: xx-large;
+    transition: transform 0.5s ease-in-out;
+}
+.text:hover
+{
+    transform: scale(1.5);
+    
+}
+
