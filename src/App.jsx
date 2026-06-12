@@ -5,6 +5,7 @@ import AboutPage from './components/pages/AboutPage.jsx';
 import ContactPage from './components/pages/ContactPage.jsx';
 import HomePage from './components/pages/HomePage.jsx';
 import ModelsPage from './components/pages/ModelsPage.jsx';
+import VehicleDetailPage from './components/pages/VehicleDetailPage/VehicleDetailPage.jsx';
 import ServicePage from './components/pages/ServicePage.jsx';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="models" element={<ModelsPage />} />
+          <Route path="vehicles/:slug" element={<VehicleDetailPage />} />
           <Route path="service" element={<ServicePage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
