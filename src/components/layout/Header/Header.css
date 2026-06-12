@@ -1,0 +1,136 @@
+.site-nav {
+    background-color: rgb(255, 229, 229);
+    padding: 1rem 0 1.25rem;
+    border-radius: 5px;
+}
+
+.mainhead {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0 1.25rem;
+}
+
+.nav-shell {
+    width: min(1200px, calc(100% - 2rem));
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.nav-links > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.15rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: rgb(137, 9, 9);
+    font-size: 1rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(137, 9, 9, 0.12);
+    box-shadow: 0 8px 18px rgba(35, 24, 18, 0.05);
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.nav-links > a:hover {
+    transform: translateY(-1px);
+    background-color: rgba(162, 225, 142, 0.32);
+    box-shadow: 0 10px 20px rgba(35, 24, 18, 0.08);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-input {
+    width: min(240px, 30vw);
+    padding: 0.7rem 0.85rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-button {
+    padding: 0.7rem 0.95rem;
+    background-color: #28b560;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #a2e18e;
+}
+
+.wishlist-button {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #378650;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    flex: 0 0 auto;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.wishlist-button:hover {
+    transform: translateY(-1px);
+    background-color: #8bd515;
+}
+
+.wishlist-button i {
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .nav-shell {
+        align-items: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-bar {
+        width: min(100%, 420px);
+    }
+
+    .search-input {
+        width: 100%;
+        min-width: 0;
+    }
+}

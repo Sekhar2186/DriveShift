@@ -1,0 +1,414 @@
+.models-page,
+.service-page,
+.contact-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.page-hero,
+.catalog-section,
+.service-cta,
+.contact-layout {
+    width: min(1200px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.page-hero,
+.service-cta,
+.contact-form,
+.contact-note {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(28, 23, 20, 0.08);
+    border-radius: 32px;
+    box-shadow: var(--shadow);
+}
+
+.page-hero {
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.page-kicker,
+.section-kicker {
+    margin: 0 0 0.75rem;
+    color: var(--brand);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.page-title {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.3rem, 4vw, 4.1rem);
+    line-height: 1.04;
+}
+
+.page-lead,
+.catalog-heading p,
+.service-card p,
+.service-step p,
+.contact-card p,
+.contact-note p,
+.service-cta p {
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 1.03rem;
+}
+
+.page-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.primary-button,
+.secondary-button,
+.vehicle-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.primary-button {
+    padding: 0.9rem 1.35rem;
+    background: linear-gradient(135deg, var(--brand) 0%, #b3251c 100%);
+    color: #fff;
+    box-shadow: 0 14px 24px rgba(140, 13, 16, 0.22);
+    border: none;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 28px rgba(140, 13, 16, 0.28);
+    background: linear-gradient(135deg, var(--brand-dark) 0%, #961010 100%);
+}
+
+.secondary-button {
+    padding: 0.9rem 1.35rem;
+    background: rgba(255, 255, 255, 0.76);
+    color: var(--brand);
+    border: 1px solid rgba(140, 13, 16, 0.15);
+}
+
+.secondary-button:hover {
+    transform: translateY(-2px);
+    background: #fff;
+}
+
+.catalog-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.catalog-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.catalog-heading h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 3vw, 2.55rem);
+    line-height: 1.1;
+}
+
+.vehicle-grid,
+.service-grid,
+.service-steps,
+.contact-card-grid,
+.form-row {
+    display: grid;
+    gap: 1rem;
+}
+
+.vehicle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.vehicle-card,
+.service-card,
+.service-step,
+.contact-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(28, 23, 20, 0.08);
+    border-radius: 24px;
+    padding: 1.4rem;
+    box-shadow: 0 12px 30px rgba(35, 24, 18, 0.08);
+}
+
+.vehicle-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 0;
+}
+
+.vehicle-media {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #e8ded3;
+}
+
+.vehicle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.vehicle-card:hover .vehicle-image {
+    transform: scale(1.05);
+}
+
+.vehicle-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(17, 14, 12, 0.85);
+    color: #fff;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.vehicle-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.vehicle-title,
+.service-card h3,
+.service-step h3,
+.contact-card h2,
+.contact-note h2,
+.service-cta h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.15;
+}
+
+.vehicle-title {
+    font-size: 1.4rem;
+}
+
+.vehicle-spec {
+    margin: 0;
+    color: var(--brand);
+    font-weight: 700;
+}
+
+.vehicle-description {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.vehicle-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.vehicle-meta {
+    color: var(--muted);
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.vehicle-link {
+    padding: 0.7rem 1rem;
+    background: rgba(140, 13, 16, 0.1);
+    color: var(--brand);
+}
+
+.vehicle-link:hover {
+    transform: translateX(4px);
+    color: var(--brand-dark);
+    background: rgba(140, 13, 16, 0.16);
+}
+
+.service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.service-step-number {
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: rgba(140, 13, 16, 0.1);
+    color: var(--brand);
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+
+.service-cta {
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.service-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 1rem;
+    align-items: start;
+}
+
+.contact-aside {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-card-title {
+    margin: 0 0 0.5rem;
+    color: var(--brand);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.76rem;
+    font-weight: 800;
+}
+
+.contact-card h2 {
+    margin: 0 0 0.45rem;
+    font-size: 1.2rem;
+}
+
+.contact-note {
+    padding: 1.4rem;
+}
+
+.contact-form {
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-field {
+    display: grid;
+    gap: 0.45rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.form-field span {
+    font-size: 0.95rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 18px;
+    border: 1px solid rgba(28, 23, 20, 0.12);
+    background: #fff;
+    color: var(--text);
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: rgba(140, 13, 16, 0.35);
+    box-shadow: 0 0 0 4px rgba(140, 13, 16, 0.08);
+}
+
+.form-textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.submit-button {
+    align-self: flex-start;
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    .page-hero,
+    .catalog-section,
+    .service-cta,
+    .contact-layout {
+        width: min(1200px, calc(100% - 1.5rem));
+    }
+
+    .vehicle-grid,
+    .service-grid,
+    .service-steps,
+    .contact-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    .page-hero,
+    .catalog-section,
+    .service-cta,
+    .contact-layout {
+        width: min(1200px, calc(100% - 1rem));
+    }
+
+    .vehicle-grid,
+    .service-grid,
+    .service-steps,
+    .contact-card-grid,
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .page-actions {
+        width: 100%;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+
+    .vehicle-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}

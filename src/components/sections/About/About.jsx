@@ -1,4 +1,6 @@
-import Image1 from '../../assets/rr.jpeg';
+import { Link } from 'react-router-dom';
+import './About.css';
+import Image1 from '../../../assets/rr.jpeg';
 
 const stats = [
   { value: '15+', label: 'Years of trusted service' },
@@ -45,7 +47,7 @@ const values = [
 
 function About() {
   return (
-    <section className="about-section" id="about">
+    <section className="about-section">
       <div className="about-container">
         <div className="about-hero">
           <div className="about-copy">
@@ -59,12 +61,12 @@ function About() {
               feel like the right fit, not just the next option.
             </p>
             <div className="about-actions">
-              <a className="about-button about-button-primary" href="#models">
+              <Link className="about-button about-button-primary" to="/models">
                 Explore models
-              </a>
-              <a className="about-button about-button-secondary" href="#contact">
+              </Link>
+              <Link className="about-button about-button-secondary" to="/contact">
                 Speak to an advisor
-              </a>
+              </Link>
             </div>
             <ul className="about-highlights">
               <li>Tailored recommendations for every lifestyle</li>
@@ -98,7 +100,7 @@ function About() {
           ))}
         </div>
 
-        <section className="about-services" id="service">
+        <section className="about-services">
           <p className="about-kicker">Services</p>
           <h3 className="about-subtitle">
             Everything you need before and after the drive.
