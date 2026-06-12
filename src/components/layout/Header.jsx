@@ -4,10 +4,10 @@ function Header() {
             <h1 className="mainhead">Welcome to DriveSift</h1>
             <nav>
                 <div className='container'>
-                    <a href="">About</a>
-                    <a href="">Models</a>
-                    <a href="">Service</a>
-                    <a href="">Contact Us</a>
+                    <a href="#about">About</a>
+                    <a href="#models">Models</a>
+                    <a href="#service">Service</a>
+                    <a href="#contact">Contact Us</a>
                     <div className="search-bar">
                         <input
                             type="text"
